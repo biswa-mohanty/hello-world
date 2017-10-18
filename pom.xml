@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.mycompany</groupId>
    <artifactId>hello-world</artifactId>
-   <version>1.0.1-SNAPSHOT</version>
+   <version>1.0.1</version>
    <packaging>mule</packaging>
    <name>Mule hello-world Application</name>
    <properties>
@@ -24,7 +24,7 @@
       <connection>scm:git:${github.url}</connection>
       <url>${github.url}</url>
       <developerConnection>scm:git:${github.url}</developerConnection>
-      <tag>HEAD</tag>
+      <tag>v1.0.1</tag>
    </scm>
    <build>
       <plugins>
