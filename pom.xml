@@ -32,12 +32,15 @@
 				<version>2.5.3</version>
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<pushChanges>false</pushChanges> <!--Release Plugin don't push to remote -->
+					<localCheckout>true</localCheckout> <!--Release Plugin clone from local repo -->
 				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-scm-plugin</artifactId>
-						<version>1.8.1</version>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<version>1.9</version>
 					</dependency>
 				</dependencies>
 			</plugin>
